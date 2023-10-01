@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>我的个人空间</title>
+<link rel="stylesheet" href="styles.css">
 <style>
 body {
   margin: 0;
@@ -26,6 +27,18 @@ body {
 <a href="https://b23.tv/osJhv0b" style="color: #00FF00; text-decoration: none;"><h1>这是我的个人空间</h1></a>
 <div id="time"></div>
 <div id="welcome">欢迎来到测试网站</div>
+<nav id="nav">
+  <div id="menu">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <ul id="links">
+    <li><a href="#">主页</a></li>
+    <li><a href="#">今日图片</a></li>
+    <li><a href="#">(更新中)</a></li>
+  </ul>
+</nav>
 <script>
 function updateTime() {
   const timeElement = document.getElementById('time');
@@ -37,6 +50,11 @@ function updateTime() {
 }
 setInterval(updateTime, 1000);
 updateTime();
+
+document.getElementById('menu').addEventListener('click', function() {
+  const links = document.getElementById('links');
+  links.style.display = links.style.display === 'block' ? 'none' : 'block';
+});
 </script>
 </body>
 </html>
