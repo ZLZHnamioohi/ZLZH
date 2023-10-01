@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>我的个人空间</title>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css"> <!-- 这里链接到您的 CSS 文件 -->
 <style>
 body {
   margin: 0;
@@ -39,22 +39,6 @@ body {
     <li><a href="#">(更新中)</a></li>
   </ul>
 </nav>
-<script>
-function updateTime() {
-  const timeElement = document.getElementById('time');
-  const now = new Date();
-  const hours = now.getHours().toString().padStart(2, '0');
-  const minutes = now.getMinutes().toString().padStart(2, '0');
-  const seconds = now.getSeconds().toString().padStart(2, '0');
-  timeElement.textContent = `${hours}:${minutes}:${seconds}`;
-}
-setInterval(updateTime, 1000);
-updateTime();
-
-document.getElementById('menu').addEventListener('click', function() {
-  const links = document.getElementById('links');
-  links.style.display = links.style.display === 'block' ? 'none' : 'block';
-});
-</script>
+<script src="scripts.js"></script> <!-- 这里链接到您的 JavaScript 文件 -->
 </body>
 </html>
