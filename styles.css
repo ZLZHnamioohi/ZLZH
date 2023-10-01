@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #808080;
+  color: #00FF00;
+  text-align: center;
+  padding-top: 10%;
+}
+#time {
+  font-size: 2em;
+  margin-top: 20px;
+}
+#welcome {
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+#nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+}
+#menu {
+  cursor: pointer;
+  display: inline-block;
+}
+.bar {
+  background-color: #0000FF;
+  height: 3px;
+  width: 30px;
+  margin: 6px 0;
+}
+#links {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+}
+#links li {
+  margin-bottom: 10px;
+}
+#links a {
+  color: #0000FF;
+  text-decoration: none;
+}
